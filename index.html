@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="bootstrap4.3.1/css/bootstrap.min.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	
+
+</head>
+<body>
+	<header>
+		<div class="container headerContainer">
+			<div class="row" >
+				<div class="logo col-xl-6 col-lg-6 col-md-6 col-sm-12">
+					<img src="images/Logo.png" alt="logo">
+				</div>
+				<div class="phone col-xl-6 col-lg-6 col-md-6 col-sm-12">
+					<a href="tel:+1234567890"><span>+38(097) 977-97-97</span></a>
+					<a href="tel:+1234567890"><span>+38(097) 977-97-97</span></a>
+					<a  data-toggle="modal" data-target="#exampleModal" href="#">Обратная связь</a>
+				</div>
+
+			<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">ОБРАТНАЯ СВЯЗЬ</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button><!-- close -->
+				      </div><!-- modal-header -->
+				      <div class="modal-body feedback">
+				      	<form action="#" method="post" enctype="multipart/form-data">
+				      		<p>Ваше имя *</p>
+						    <input class="form-control lineform_name" type="text" name="name"  required="required" placeholder="Поле обязательно для заполнения">
+						    <p>Телефон *</p>
+						    <input class="form-control lineform_phone" type="number" name="phone" required="required" placeholder="Поле обязательно для заполнения">
+						    <p>Email *</p>
+						    <input class="form-control lineform_email" type="email" name="email" required="required" placeholder="Поле обязательно для заполнения">
+						    <p>Сообщение</p>
+						    <textarea name="#" cols="30" rows="5"></textarea>
+						    <button type="button" class="btn btn-primary">ОТПРАВИТЬ</button>
+						</form>
+				      </div><!-- modal-body feedback -->
+				    </div><!-- modal-content -->
+				  </div><!-- modal-dialog -->
+				</div><!-- modal fade -->
+			</div><!-- row -->
+		</div><!-- container -->
+		<div class="bgMenu">
+			<div class="container headerContainer">
+				<div class="row">
+					<ul class="menu col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<li class="chief"><a href="#">Главная <span></span></a></li>
+						<li class="catalog"><a href="#">Каталог </a></li>
+						<li class="delivery"><a href="#"> Доставка и оплата</a></li>
+						<li class="price"><a href="#">Прайс-лист</a></li>
+						<li class="contact" ><a href="#">Контакты</a></li>
+					</ul><!-- menu -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- bgMenu -->
+	</header>
+	<main>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000">
+  			<div class="carousel-inner">
+    			<div class="carousel-item active box-16x9">
+      				<div class="box-16x9-content">
+    						<img src="images/Picture tz.jpg" class="d-block w-100" alt="imagesCitchen">
+    					</div><!-- box-16x9-content -->
+    			</div><!-- carousel-item active -->
+    				<div class="carousel-item box-16x9">
+    					<div class="box-16x9-content">
+    						<img src="images/Picture tz.jpg" class="d-block w-100" alt="imagesCitchen">
+    					</div><!-- box-16x9-content -->
+    				</div><!-- carousel-item -->
+    					<div class="carousel-item box-16x9">
+		     	 			<div class="box-16x9-content">
+    						<img src="images/Picture tz.jpg" class="d-block w-100" alt="imagesCitchen">
+    					</div><!-- box-16x9-content -->
+		   	 			</div><!-- carousel-item -->
+		  	</div><!-- carousel-inner -->
+		  	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="sr-only">Previous</span>
+		 	 </a><!-- carousel-control-prev -->
+		  	 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		   		<span class="sr-only">Next</span>
+		  	</a><!-- carousel-control-next -->
+		</div><!-- carousel slide -->
+		<div class="container">
+			<ul class="menuCatalog row col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				<li><a class="active" href="#"><span>Главная</span> / </a></li>
+				<li><a href="#"><span>Каталог</span> / </a></li>
+				<li><span>Бытовая техника</span></li>
+			</ul><!-- menuCatalog -->
+			<div class="row">
+				<div class="leftblock col-xl-3 col-lg-3 col-md-3 col-sm-4">
+					<ul class="leftmenu">
+						<li><a href="#">Автомобили</a></li>   
+						<li><a class="active" href="#">Бытовая техника</a>
+							<ul class="submenu">
+								<li><a href="#">Микроволновки</a></li>
+								<li><a href="#">Холодильники</a></li>
+								<li><a href="#">Поссудомоечные машины</a></li>
+								<li><a class="active"  href="#">Чайники</a></li>
+							</ul><!-- submenu -->
+						</li>
+						<li><a href="#">Мобильная техника</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Одежда</a></li>
+						<li><a href="#">Недвижимость</a></li>
+					</ul><!-- leftmenu -->
+					<div class="pricelist">
+						<a class="priceimg" href="prais tz.xlsx"></a>
+					</div><!-- pricelist -->
+				</div><!-- leftblock -->
+					<div class="centerblock col-xl-9 col-lg-9 col-md-9 col-sm-8">
+						<div class="catalog row col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="content col-xl-4 col-lg-6 col-md-12 col-sm-12">
+								<div class="product">
+									<img src="images/nophoto.png" alt="nophoto">
+									<p>Самый клевый чайник,<br> который надо купить!</p>
+									<div class="row ">
+										<div class="cost">
+											<span class="cost">900грн</span>
+										</div><!-- cost -->
+										<div class="images">
+											<img src="images/addtobasket_mini.png" alt="addtobasket_mini">
+										</div><!-- images -->
+									</div><!-- row -->
+								</div><!-- product -->
+							</div><!-- content -->
+							<div class="content col-xl-4 col-lg-6 col-md-12 col-sm-12">
+								<div class="product">
+									<img src="images/nophoto.png" alt="nophoto">
+									<p>Самый клевый чайник,<br> который надо купить!</p>
+									<div class="row ">
+										<div class="cost">
+											<span class="cost">750грн</span>
+										</div><!-- cost -->
+										<div class="images">
+											<img src="images/addtobasket_mini.png" alt="addtobasket_mini">
+										</div><!-- images -->
+									</div><!-- row -->
+								</div><!-- product -->
+							</div><!-- content -->
+							<div class="content col-xl-4 col-lg-6 col-md-12 col-sm-12">
+								<div class="product">
+									<img src="images/nophoto.png" alt="nophoto">
+									<p>Самый клевый чайник,<br> который надо купить!</p>
+									<div class="row ">
+										<div class="cost">
+											<span class="cost">500грн</span>
+										</div><!-- cost -->
+										<div class="images">
+											<img src="images/addtobasket_mini.png" alt="addtobasket_mini">
+										</div><!-- images -->
+									</div><!-- row -->
+								</div><!-- product -->
+							</div><!-- content -->
+							<div class="content col-xl-4 col-lg-6 col-md-12 col-sm-12">
+								<div class="product">
+									<img src="images/nophoto.png" alt="nophoto">
+									<p>Самый клевый чайник,<br> который надо купить!</p>
+									<div class="row ">
+										<div class="cost">
+											<span class="cost">1200грн</span>
+										</div><!-- cost -->
+										<div class="images">
+											<img src="images/addtobasket_mini.png" alt="addtobasket_mini">
+										</div><!-- images -->
+									</div><!-- row -->
+								</div><!-- product -->
+							</div><!-- content -->
+							<div class="content col-xl-4 col-lg-6 col-md-12 col-sm-12">
+								<div class="product">
+									<img src="images/nophoto.png" alt="nophoto">
+									<p>Самый клевый чайник,<br> который надо купить!</p>
+									<div class="row ">
+										<div class="cost">
+											<span class="cost">1000грн</span>
+										</div><!-- cost -->
+										<div class="images">
+											<img src="images/addtobasket_mini.png" alt="addtobasket_mini">
+										</div><!-- images -->
+									</div><!-- row -->
+								</div><!-- product -->
+							</div><!-- content -->
+						</div><!-- catalog -->
+						<div class="pagination">
+							  <a href="#">1</a>
+							  <a href="#">2</a>
+							  <a class="active" href="#">3</a>
+							  <a href="#">4</a>
+							  <a href="#">5</a>
+							  <a href="#">6</a>
+							  <a href="#">7</a>
+						</div><!-- pagination -->
+						<hr>
+						<div class="row">
+							<div class="description rigth col-xl-6 col-lg-6 col-md-12 col-sm-12">
+							<p>Компания «АЙДИА ДИДЖИТАЛ ЭДЖЕНСИ» существует уже 2 года. Мы занимаемся внедрением интернет-инструментов, которые помогают бизнесу наших клиентов расти и приносить прибыль. За это время мы создали более 20 сайтов для разных направлений бизнеса. На данный момент наш коллектив состоит из 13 сотрудников. Мы заинтересованы в постоянном развитии и стремимся предоставлять нашим клиентам качественные услуги. Девиз нашей компании «КРЕАТИВ И КОММУНИКАЦИИ В СТИЛЕ ROCK'N'ROLL»</p>
+						</div><!-- description -->
+						<div class="description reft col-xl-6 col-lg-6 col-md-12 col-sm-12">
+							<p>Вторым направлением нашей деятельности является интернет-маркетинг.  На данный момент мы работаем с более чем 20 постоянными клиентами в разных сферах интернет-маркетинга. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения и рекламы в социальных сетях. На данный момент отдел маркетинга состоит из 6 человек под руководством ведущего специалиста. Отдел маркетинга тесно сотрудничает с отделом разработки.</p>
+						</div><!-- description -->
+						</div><!-- row -->
+					</div><!-- centerblock -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</main>
+	<footer>
+		<div class="bgfooter">
+			<div class="container footerContainer">
+			<div class="row">
+				<div class="adress col-xl-4 col-lg-4 col-md-4 col-sm-12">
+					<p>© 2012–2018 ООО «Пиксель» <br> info@name.com</p>
+				</div>
+				<div class="menuFooter col-xl-4 col-lg-4 col-md-4 col-sm-12">   
+					<a href="#">Главная</a>
+					<a href="#">Каталог</a>
+					<a href="#">Доставка и оплата</a>
+					<a href="#"> Прайс-лист</a>
+					<a href="#">Контакты</a>
+				</div>
+				<div class="company col-xl-4 col-lg-4 col-md-4 col-sm-12">
+					<a href="#"><span>Разработка сайта</span> - <br>компания IdeaDigital.Agency</a>
+				</div><!-- company -->
+			</div><!-- row -->
+		</div><!-- container -->
+		</div><!-- bgfooter -->
+	</footer>
+	
+		
+
+	<script src="bootstrap4.3.1/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="bootstrap4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
